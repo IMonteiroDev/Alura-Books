@@ -1,0 +1,58 @@
+.cabecalho_menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url("../Assets/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* ele libera a opção de você botar outros atributos como top, left, right, bottom */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container_img {
+    padding: 1em;
+}
+
+.container_botao {
+    display: none;
+}
+
+.container_botao:checked ~ .lista-menu{
+    display: block;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute; /*ele permite que você movimente o seu elemento de acordo com outro que veio antes, ou que é o pai, que esteja a position diferente de static que é a padrão  */
+    top: 100%;
+    width: 60vw;
+}
+
+.lista-menu_item, .lista-menu_titulo {
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu_titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu_link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     background-clip: text;
+     text-transform: uppercase;
+}

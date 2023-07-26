@@ -17,18 +17,19 @@
     justify-content: center;
 }
 
+.topicos_item {
+    margin: 2em o.5em;
+}
+
 .topicos_link {
     color: var(--branco);
     padding: 1em;
     background-color: var(--laranja);
-}
-
-.topicos_item {
-    margin: 2em o.5em;
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
 }
+
 
 @media screen and (min-width: 1024px) {
     .topicos_titulo {

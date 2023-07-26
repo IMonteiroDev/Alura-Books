@@ -17,8 +17,8 @@
     <header class="cabecalho">
         <div class="container">
             <input class="container_botao" type="checkbox" id="menu">
-            <label for="menu">
-                <span class="cabecalho_menu-hamburguer"></span>
+            <label for="menu" class="container_rotulo">
+                <span class="cabecalho_menu-hamburguer container_img"></span>
             </label>
             <ul class="lista-menu">
                 <li class="lista-menu_titulo">Categorias</li>
@@ -44,7 +44,9 @@
 
         <ul class="opcoes">
             <input type="checkbox" id="opcoes_menu" class="opcoes_botao">
-            <label for="opcoes_menu"></label>
+            <label for="opcoes_menu" class="opcoes_rotulo">
+                <li class="opcoes_item">Categorias</li>
+            </label>
 
             <ul class="lista-menu">
                 <li class="lista-menu_item">
@@ -64,7 +66,6 @@
                 </li>
             </ul>
 
-            <li class="opcoes_item">Categorias</li>
             <li class="opcoes_item"><a href="#" class="opcoes_link">Favoritos</a></li>
             <li class="opcoes_item"><a href="#" class="opcoes_link">Minha estante</a></li>
         </ul>
@@ -85,8 +86,7 @@
     </header>
 
     <section class="banner">
-        <h2 class="banner_titulo">Já sabe por onde começar?
-        </h2>
+        <h2 class="banner_titulo">Já sabe por onde começar?</h2>
         <p class="banner_texto">Encontre em nossa estante o que precisa para o seu desenvolvimento</p>
         <input class="banner_pesquisa" type="search" placeholder="Qual será a sua próxima leitura?">
     </section>
@@ -123,7 +123,7 @@
                     <div class="descricao">
                         <h3 class="descricao_titulo">Talvez você também se interesse por</h3>
                         <h2 class="descricao_titulo-livro">Angular 11 e firebase</h2>
-                        <p>Construindo uma aplicação integrada com a plataforma do Google</p>
+                        <p class="descricao_texto">Construindo uma aplicação integrada com a plataforma do Google</p>
                     </div>
                     <!-- Segunda coluna -->
                     <img src="./Assets/Angular.png" alt="Imagem do Angular" class="descricao_img">
@@ -175,7 +175,7 @@
                         <img src="./Assets/Estrelinhas.png" alt="Estrelinhas" class="descricao_estrela">
                         <h3 class="descricao_titulo">Autora do Mês</h3>
                         <h2 class="descricao_titulo-livro">Juliana Agarikov</h2>
-                        <p>Analista de sistemas e escritora, Juliana é especialista em Front-end</p>
+                        <p class="descricao_texto">Analista de sistemas e escritora, Juliana é especialista em Front-end</p>
                     </div>
                     <img src="./Assets/Perfil-escritora 1-1.png" alt="Escritora Juliana Agarikov Sorrindo" class="descricao_img">
                 </div>
@@ -227,8 +227,8 @@
     
     <section class="contato">
         <div class="contato_descricao">
-        <h2 class="contato_titulo">Fique por dentro das novidades!</h2>
-        <p class="contato_texto">Atualização de ebooks, novos livros, promoções e outros</p>
+            <h2 class="contato_titulo">Fique por dentro das novidades!</h2>
+            <p class="contato_texto">Atualização de ebooks, novos livros, promoções e outros</p>
         </div>
         <input type="email" placeholder="Cadastre seu e-mail" class="contato_email" >
     </section>
